@@ -37,13 +37,10 @@ Alejandro S. Borlaff: E-mail: asborlaff@ucm.es - asborlaff@iac.es
  INPUTS (MANDATORY):
     r: Radius - X: An n-element vector containing the independent variable values.
                 X may be of type integer, floating point, or double-precision floating-point.
- 
-         An n-element integer, single-, or double-precision floating-point vector.
     r_down,r_up: 1sigma confidence limits for the r (radius) value. Their values should be r_down < r < r_up.
                  A common error is to introduce relative uncertainities to the central error, not absolute values.  
  
     mu: Magnitude - Y: An n-element integer, single-, or double-precision floating-point vector.
- 
     mu_down,mu_up: 1sigma confidence limits for the mu (magnitude) value. Their values should be mu_down > mu > mu_up.  
                    A common error is to mistake down with lower (numeric) magnitudes, which are brighter intensities. 
                    The _down stands for the brightness, not the numeric (inverse logarithmic) scale. 
