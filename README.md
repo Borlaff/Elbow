@@ -61,6 +61,33 @@ Alejandro S. Borlaff: E-mail: asborlaff@ucm.es - asborlaff@iac.es
    nsimul_break (Default=1000): The number of simulations that will be used for the Bootstrapping + Monte Carlo fit. 
                                 A reasonable number would be at least 10^4 simulations.   
           
+          
+ OUTPUTS: 
+ The output will be a numeric named vector with the following parameters:
+ 
+names(results)<-c("median_muoi","muoi_up","muoi_down","median_muoo","muoo_up","muoo_down","median_hi","hi_up","hi_down","median_ho","ho_up","ho_down","p_muo","p_ho","median_rbrk","rbrk_up","rbrk_down","median_mubrk","mubrk_up","mubrk_down")
+
+median_muoi: Median central surface brightness (\muoi) for the inner profile. 
+muoi_up / muoi_down: 1sigma confidence interval for the central surface brightness (\muoi) for the inner profile. 
+ 
+median_muoo: Median central surface brightness (\muoo) for the outer profile. 
+muoo_up / muoo_down: 1sigma confidence interval for the central surface brightness (\muoo) for the outer profile. 
+
+median_hi: Median scale-length (\hi) for the inner profile. 
+hi_up / hi_down: 1sigma confidence interval for the scale-length (\hi) for the inner profile. 
+ 
+median_ho: Median scale-length (\ho) for the outer profile. 
+ho_up / ho_down: 1sigma confidence interval for the scale-length (\ho) for the outer profile. 
+
+p_muo: Likelihood that the central surface brightness of the inner and outer profiles are coming from the same parent distribution (i.e, if p_muo < 0.05, you have >95% likelihood that the break is real. A Type-I, pure exponential profile will return p_muo >> 0.05). 
+p_ho: Likelihood that the scale-lenghts of the inner and outer profiles are coming from the same parent distribution.
+
+median_rbrk: Median break radius for the profile. 
+rbrk_up / rbrk_down: 1sigma confidence interval for the break radius for the profile.
+
+median_mubrk: Median surface brightness at the break radius for the profile. 
+mubrk_up / mubrk_down: 1sigma confidence interval for the surface brightness at the break radius for the profile.
+
        
  :Author:
        
