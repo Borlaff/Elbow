@@ -90,6 +90,7 @@ rbrk_up / rbrk_down: 1sigma confidence interval for the break radius for the pro
 median_mubrk: Median surface brightness at the break radius for the profile. 
 mubrk_up / mubrk_down: 1sigma confidence interval for the surface brightness at the break radius for the profile.
 
+In addition to these, Elbow will generate a PDD.dat file that contains the values of hi,muoi,ho,muoo,rbrk and mubrk of each simulation (in that order!). 
        
  :Author:
        
