@@ -36,13 +36,15 @@ Alejandro S. Borlaff: E-mail: asborlaff@ucm.es - asborlaff@iac.es
     
  INPUTS (MANDATORY):
  
- r: Radius - X: An n-element vector containing the independent variable values.
+ r: Radius - X: The vector containing the radius of your galaxy. You can use either kpc, arcsec or pix, but be 
+aware that the inner and outer scalelengths, (hi, ho), and the break radius (rbreak) will be in the same units. 
+                 An n-element vector containing the independent variable values.
                 X may be of type integer, floating point, or double-precision floating-point.
                 
  r_down,r_up: 1sigma confidence limits for the r (radius) value. Their values should be r_down < r < r_up.
                  A common error is to introduce relative uncertainities to the central error, not absolute values.  
  
- mu: Magnitude - Y: An n-element integer, single-, or double-precision floating-point vector.
+ mu: Magnitude - Y: The vector containing the surface brightness profile of your object, for each radius element. The r, r_up, r_down and mu, mu_up, mu_down must be of the same length. The units are (mag/arcsec^2).  An n-element integer, single-, or double-precision floating-point vector.
  
  mu_down,mu_up: 1sigma confidence limits for the mu (magnitude) value. Their values should be mu_down > mu > mu_up.  
                    A common error is to mistake down with lower (numeric) magnitudes, which are brighter intensities. 
